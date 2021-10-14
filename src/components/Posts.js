@@ -43,7 +43,6 @@ async function deleteData(id){
    
     try{
         let response = await axios.delete("https://jsonplaceholder.typicode.com/posts/"+ id);
-        console.log(response)
         let data = [...posts]
         let newData = data.filter((items)=> items.id !== id)
         setPosts(newData)
