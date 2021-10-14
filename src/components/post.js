@@ -40,7 +40,7 @@ function Post(props){
     async function fetchUser(id){
         try{      
             let response = await axios.get( "https://jsonplaceholder.typicode.com/users/" + id)
-            console.log(response.data)
+           
             setUser(response.data)
         }catch(error){
             console.log(error)
