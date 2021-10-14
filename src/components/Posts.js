@@ -40,7 +40,7 @@ React.useEffect(()=>{
 
 // async function to delete the respective id post
 async function deleteData(id){
-    console.log(id)
+   
     try{
         let response = await axios.delete("https://jsonplaceholder.typicode.com/posts/"+ id);
         console.log(response)
